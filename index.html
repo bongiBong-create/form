@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <section class="company">
+            <div class="company__logo-container">
+                <img class="logo" src="src/imgs/logo.png" alt="logo">
+                <p class="title">ODIN</p>
+            </div>
+            <span>Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a></span>
+        </section>
+        <section class="form__container">
+            <div class="form__container-description">
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up now to get started.
+                </p>
+                <p>You know you want to.
+                </p>
+            </div>
+            <form action="#" id="form__odin" class="form__odin">
+                <h1>Let's do this!</h1> 
+
+                <fieldset>
+                    <div class="form__part-1">
+                        <div>
+                            <label for="first__name">First name</label>
+                            <input type="text" id="first__name">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="text" id="password">
+                        </div>
+
+
+                    </div>
+                    <div class="form__part-2">
+                        <div>
+                            <label for="last__name">Last name</label>
+                            <input type="text" id="last__name">
+                        </div>
+                        <div>
+                            <label for="number">Phone number</label>
+                            <input type="number" id="number">
+                        </div>
+                        <div>
+                            <label for="confirm__password">Confirm password</label>
+                            <input type="text" id="confirm__password">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+
+            <button form="form__odin">Create account</button>
+
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
