@@ -33,7 +33,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 700px;
+    width: 900px;
     color: #fff;
 }
 
@@ -139,7 +139,7 @@ h2,
 
 input {
     border-radius: 6px;
-    border: 2px solid #596d48;
+    border: 1px solid #596d48;
 }
 
 input:invalid {
@@ -151,5 +151,9 @@ input:invalid .required{
 }
 
 input:valid {
+    border-color: gray;
+}
+
+input:focus {
     border-color: gray;
 }
