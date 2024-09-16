@@ -9,64 +9,72 @@
 </head>
 
 <body>
-    <main class="main">
-        <section class="company">
-            <div class="company__logo-container">
-                <img class="logo" src="src/imgs/logo.png" alt="logo">
-                <p class="title">ODIN</p>
+    <div class="logo__container">
+        <div class="logo__box">
+            <img class="logo" src="/src/imgs/logo.png" alt="logo">
+            <h1>ODIN</h1>
+        </div>
+
+        <div class="info__author">
+            Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a>
+        </div>
+    </div>
+
+    <div class="form__container">
+        <p class="info">
+            This is not a real online service! You know you need something
+            like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+            <br><br>
+            You know you want to.
+        </p>
+
+        <form class="form" action="#">
+            <h2>Let's do this</h2>
+
+            <div class="form__el">
+                <div class="form__el-item">
+                    <label for="first__name">FIRST NAME</label>
+                    <input type="text" id="first__name">
+                </div>
+                <div class="form__el-item">
+                    <label for="last__name">LAST NAME</label>
+                    <input type="text" id="last__name">
+                </div>
             </div>
-            <span>Photo by <a href="#">Hallie West</a> on <a href="#">Unsplash</a></span>
-        </section>
-        <section class="form__container">
-            <div class="form__container-description">
-                <p>This is not a real online service! You know you need something like this in your life to help you
-                    realize your deepest dreams. Sign up now to get started.
-                </p>
-                <p>You know you want to.
-                </p>
+
+            <div class="form__el">
+                <div class="form__el-item">
+                    <label for="user__email">EMAIL</label>
+                    <input type="email" id="user__email">
+                </div>
+
+                <div class="form__el-item">
+                    <label for="user__number">NUMBER</label>
+                    <input type="number" id="user__number">
+                </div>
             </div>
-            <form action="#" id="form__odin" class="form__odin">
-                <h1>Let's do this!</h1> 
 
-                <fieldset>
-                    <div class="form__part-1">
-                        <div>
-                            <label for="first__name">First name</label>
-                            <input type="text" id="first__name">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="text" id="password">
-                        </div>
+            <div class="form__el">
+                <div class="form__el-item">
+                    <label for="user__password">PASSWORD</label>
+                    <input type="password" id="user__password">
+                </div>
+                <div class="form__el-item">
+                    <label for="confirm">CONFIRN PASSWORD</label>
+                    <input type="password" id="confirm">
+                </div>
+            </div>
+        </form>
 
+        <button class="submit" type="submit">
+            Create Account
+        </button>
 
-                    </div>
-                    <div class="form__part-2">
-                        <div>
-                            <label for="last__name">Last name</label>
-                            <input type="text" id="last__name">
-                        </div>
-                        <div>
-                            <label for="number">Phone number</label>
-                            <input type="number" id="number">
-                        </div>
-                        <div>
-                            <label for="confirm__password">Confirm password</label>
-                            <input type="text" id="confirm__password">
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-
-            <button form="form__odin">Create account</button>
-
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </section>
-    </main>
+        <div class="login">
+            Already have an account? <a class="green" href="#">Log in</a>
+        </div>
+    </div>
 </body>
 
 </html>
